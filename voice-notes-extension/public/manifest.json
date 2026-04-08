@@ -3,8 +3,9 @@
   "name": "Voice Notes Extension",
   "version": "1.0.0",
   "description": "A Chrome extension for taking voice notes.",
-  "permissions": [],
-  "action": {
-    "default_popup": "index.html"
+  "permissions": ["storage", "tabs"],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
   }
 }
